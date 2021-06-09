@@ -1,1 +1,1 @@
-Site for Digga Products sole on EverythingAttachments.com's e-commerce website.
+Site for Digga Products sold on EverythingAttachments.com's e-commerce website.
