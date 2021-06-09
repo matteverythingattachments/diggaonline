@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Static Componenets
+import Header from '../components/Header';
 import Nav from '../components/Nav';
 
 // Router Components
@@ -12,7 +13,9 @@ export default function PageRouter() {
   return (
     <>
       <Router>
-        <Nav />
+        <Header>
+          <Nav />
+        </Header>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/second-page' component={SecondPage} />

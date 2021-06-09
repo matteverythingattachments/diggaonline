@@ -4,7 +4,8 @@ export default function Nav() {
   return (
     <>
       <div className='nav'>
-        <ul>
+        <div className='nav__title'>Digga Online</div>
+        <ul className='nav__links'>
           <li>
             <Link to='/'>Home</Link>
           </li>

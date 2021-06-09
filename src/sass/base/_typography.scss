@@ -12,3 +12,18 @@ html {
 body {
   font-size: 1.6rem;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: black;
+  }
+
+  &:hover,
+  &:active {
+    border-bottom: black solid 0.1rem;
+  }
+}

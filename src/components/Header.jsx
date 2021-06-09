@@ -1,7 +1,3 @@
-export default function () {
-  return (
-    <>
-      <div className='header'>Header</div>
-    </>
-  );
+export default function Header({ children }) {
+  return <div className='header'>{children}</div>;
 }
