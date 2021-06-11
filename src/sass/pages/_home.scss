@@ -1,0 +1,61 @@
+.home {
+  @include centerFlex;
+  flex-flow: column;
+
+  text-align: center;
+  word-wrap: break-word;
+
+  background-color: #eee;
+  margin: 2rem 5rem;
+  padding: 2rem 1rem;
+
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 15px 5px rgba(black, 0.25);
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+
+    // creates divider
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 1rem;
+
+    margin-bottom: 2rem;
+  }
+
+  &__body {
+    section {
+      @include centerFlex;
+      flex-flow: row;
+      margin: 1rem 2rem;
+
+      &:not(:last-child) {
+        margin-bottom: 5rem;
+      }
+
+      div:first-child {
+        margin-right: 2rem;
+      }
+
+      .home__img-1 {
+        // centerFlex centers the <p> inside
+        @include centerFlex;
+
+        // size of the placeholder
+        padding: 20rem;
+        height: 20rem;
+        width: 20rem;
+
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px 0px rgba(black, 0.5);
+      }
+      h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 0.4rem 0rem;
+      }
+    }
+  }
+}
